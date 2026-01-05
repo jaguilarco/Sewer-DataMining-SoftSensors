@@ -108,16 +108,16 @@ If you use this code, please cite the associated article submitted to _Algorithm
 
 This repository is provided for academic and research purposes. Licensing terms can be adapted according to journal or institutional requirements.
 
-**4. Configuración XGBoost para SHAP**
+**4. XGBoost Configuration for SHAP**
 
-La configuración específica del modelo XGBoost utilizado para generar los gráficos SHAP por clase se encuentra en `xgboost_config.py`. Esta configuración incluye:
+Specific XGBoost model configuration used to generate SHAP per-class plots is located in `xgboost_config.py`. This configuration includes:
 
-- Path al dataset (`dataset_sadeco.csv`)
-- Columna target (`Activity`)
-- Hiperparámetros del modelo XGBoost
-- Parámetros de split (test_size, random_state)
+- Dataset path (`dataset_sadeco.csv`)
+- Target column (`Activity`)
+- XGBoost model hyperparameters
+- Split parameters (test_size, random_state)
 
-Para replicar los gráficos SHAP exactos, importar la configuración:
+To replicate the exact SHAP plots, import the configuration:
 
 ```python
 from xgboost_config import DATA_CSV, TARGET_COL, XGB_PARAMS
